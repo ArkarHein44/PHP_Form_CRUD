@@ -1,6 +1,7 @@
 <?php
+require_once "vendor\autoload.php";
+use App\DB;
 
-require_once "./db.php";
 $db = new DB();
 
 $db->destroy($_GET['id']);

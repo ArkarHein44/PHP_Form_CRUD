@@ -1,0 +1,14 @@
+{
+    "name": "arkarhein/student-management-system",
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/App"
+        }
+    },
+    "authors": [
+        {
+            "name": "arkarhein"
+        }
+    ],
+    "require": {}
+}

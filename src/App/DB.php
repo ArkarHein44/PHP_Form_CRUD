@@ -1,5 +1,10 @@
 <?php
 
+namespace App;
+
+use PDO;
+use PDOException;
+
 class DB{
 
     protected $pdo;
@@ -9,8 +14,8 @@ class DB{
         try{
             $host = "localhost";
             $dbname = "test";
-            $username = "root";
-            $password = "";
+            $username = "arkarhein";
+            $password = "Ayemarmar1995#";
 
             $this->pdo = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
             $this->pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
