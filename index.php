@@ -1,10 +1,10 @@
 <?php
 
-require_once "vendor\autoload.php";
+require_once __DIR__."/vendor/autoload.php";
 
-use App\DB;
+use App\Database;
 
-$db = new DB();
+$db = new Database();
 $students = $db->index();
 
 ?>

@@ -1,9 +1,10 @@
 <?php
-require_once "vendor\autoload.php";
-use App\DB;
+require_once __DIR__."/vendor/autoload.php";
+use App\Database;
 
-$db = new DB();
-$student = $db->show($_GET['id']);
+$db = new Database();
+$student = $db->edit($_GET['id']);
+
 
 ?>
 <!doctype html>

@@ -1,8 +1,8 @@
 <?php
-require_once "vendor\autoload.php";
-use App\DB;
+require_once __DIR__."/vendor/autoload.php";
+use App\Database;
 
-$db = new DB();
+$db = new Database();
 $db->store($_POST);
 
 ?>
