@@ -10,10 +10,11 @@
       city VARCHAR(50),
       created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ,
       updated_at DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
-      );
+    );
 ```
 
-> [!NOTE] Note: in Eloquent used table name with Plural and class name with singular
+> [!NOTE]
+> In Eloquent used table name with Plural and class name with singular.
 
 - config composer 
 ```shell
