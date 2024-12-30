@@ -1,9 +1,12 @@
 <?php
 require_once __DIR__."/vendor/autoload.php";
 use App\Database;
+use Symfony\Component\HttpFoundation\Request;
+
+$request = Request::createFromGlobals();
 
 $db = new Database();
-$student = $db->show($_GET['id']);
+$student = $db->show($request->query->get('id'));
 // die(var_dump($student));
 ?>
 <!doctype html>
