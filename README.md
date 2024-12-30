@@ -1,6 +1,5 @@
-> Database
+- Database
 ```sql
-   table name => students
    CREATE TABLE IF NOT EXISTS students (
       id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
       name VARCHAR(50),
@@ -14,14 +13,14 @@
       );
 ```
 
-> Note: in Eloquent used table name with Plural and class name with singular
+> [!NOTE] Note: in Eloquent used table name with Plural and class name with singular
 
-> config composer 
+- config composer 
 ```shell
 composer init
 ```
 
-> composer.json for psr-4 autoload
+- composer.json for psr-4 autoload
 ```json
 "autoload": {
         "psr-4": {
@@ -30,23 +29,23 @@ composer init
     },
 ```
 
-> use when you updated composer.json
+- use when you updated composer.json
 ```shell
 composer dump
 ```
 
-> Dependencies
-> install illuminate/database
-    ```shell
-    composer require illuminate/database
-    ```
+1. Dependencies
+    - install illuminate/database
+        ```shell
+        composer require illuminate/database
+        ```
 
-> install Symfony Http-Foundation
-    ```shell
-    composer require symfony/http-foundation
-    ```
+    - install Symfony Http-Foundation
+        ```shell
+        composer require symfony/http-foundation
+        ```
 
-> install Symfony VarDumper
-    ```shell
-    composer require symfony/var-dumper
-    ```
+    - install Symfony VarDumper
+        ```shell
+        composer require symfony/var-dumper
+        ``` 
