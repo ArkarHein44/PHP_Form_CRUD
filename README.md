@@ -36,17 +36,17 @@ composer dump
 ```
 
 > Dependencies
-    install illuminate/database
+> install illuminate/database
     ```shell
     composer require illuminate/database
     ```
 
-    -install Symfony Http-Foundation
+> install Symfony Http-Foundation
     ```shell
     composer require symfony/http-foundation
     ```
 
-    -install Symfony VarDumper
+> install Symfony VarDumper
     ```shell
     composer require symfony/var-dumper
     ```
