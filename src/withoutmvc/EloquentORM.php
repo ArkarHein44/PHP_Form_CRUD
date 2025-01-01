@@ -3,7 +3,7 @@
 namespace App;
 
 use Illuminate\Database\Capsule\Manager as DB;
-use App\Model\Student;
+use App\Models\Student;
 
 class Database{   
 

@@ -1,6 +1,7 @@
 {
     "name": "arkarhein/student-management-system",
     "autoload": {
+        "files": ["helper.php"],
         "psr-4": {
             "App\\": "src"
         }

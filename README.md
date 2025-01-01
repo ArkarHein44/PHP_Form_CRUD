@@ -36,6 +36,11 @@ composer dump
 ```
 
 1. Dependencies
+    ```shell
+    composer install
+    ```
+    or
+
     - install illuminate/database
         ```shell
         composer require illuminate/database

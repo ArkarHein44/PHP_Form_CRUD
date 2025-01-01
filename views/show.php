@@ -1,14 +1,3 @@
-<?php
-require_once __DIR__."/vendor/autoload.php";
-use App\Database;
-use Symfony\Component\HttpFoundation\Request;
-
-$request = Request::createFromGlobals();
-
-$db = new Database();
-$student = $db->show($request->query->get('id'));
-// die(var_dump($student));
-?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -32,9 +21,9 @@ $student = $db->show($request->query->get('id'));
                 <p><b>Age:</b> <?php echo $student->age ?></p>
                 <p><b>City:</b> <?php echo $student->city ?></p>
 
-                <a href="index.php" class="btn btn-warning">Back</a>
-                <a href='<?php echo "edit.php?id=$student->id" ?>' class="btn btn-primary">Edit</a>
-                <a href='<?php echo "destroy.php?id=$student->id" ?>' class="btn btn-danger" onclick="return confirm('Are you sure to delete?')">Delete</a>
+                <a href="index" class="btn btn-warning">Back</a>
+                <a href='<?php echo "edit?id=$student->id" ?>' class="btn btn-primary">Edit</a>
+                <a href='<?php echo "destroy?id=$student->id" ?>' class="btn btn-danger" onclick="return confirm('Are you sure to delete?')">Delete</a>
                 
             </div>
 
